@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginHorizontal="2dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F6FA">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rvi_promo_img_cont"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:id="@+id/rvi_detail_history_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hotel3" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/rvi_promo_img_cont"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rvi_detail_history_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARRY OUTER BROWN"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rvi_detail_history_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jumlah 2 "
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/rvi_detail_history_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 249.000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rvi_detail_history_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="#3E45AA"
+                android:text="Total : Rp 498.000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
